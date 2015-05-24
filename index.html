@@ -3142,56 +3142,7 @@ anylinkcssmenu.init("anchorclass")
 </head>
 
 <body>
-<div id="submenu1" class="anylinkcss">
-<ul>
-<li><a href="../training/oper01.asp">Ejercicios de Identificaci&oacute;n de Agencias </a></li>
-<li><a href="../training/oper.asp">Ejercicios de Selecci&oacute;n de Plantilla </a></li>
-</ul>
-</div>
-<div id="submenu2" class="anylinkcss"> 
-<ul>
-<li><a href="../agdirec/oper401.asp" onclick="return SalirTrain2();">Directorio de Agencias Federales </a></li>
-<li><a href="../agdirec/oper4.asp" onclick="return SalirTrain2();">Directorio de Agencias Estatales </a></li>
-<li><a href="../agdirec/oper402.asp" onclick="return SalirTrain2();">Directorio de Agencias Municipales </a></li>
-<% If instr ("@1@16@28@", "@"&Session("clase")&"@") > 0 Then   %><li><a href="../agdirec/oper408list.asp" onclick="return SalirTrain2();" >Comentarios sebre Plantillas</a></li><% End If %>
-<li><a href="../agdirec/oper408.asp" onclick="return SalirTrain2();">Agencias en Proceso de Integración </a></li>
-</ul>
-</div>
-<div id="submenu3" class="anylinkcss">
-<ul>
-<li><a href="../docum/manual311.pdf" onclick="return SalirTrain2();" target="_blank" >Manual del Operador</a></li>
-<li><a href="../docum/manualrespond.pdf" onclick="return SalirTrain2();" target="_blank" >Manual del sistema Respond</a></li>
-<li><a href="../docum/tutorial_asume.asp" onclick="return SalirTrain2();">Tutorial sobre ASUME</a></li>
-<li><a href="../ec.asp" onclick="return SalirTrain2();">Tutorial sobre ADSEF (en proceso)</a></li>
-<li><a href="../docum/tr2.asp" onclick="return SalirTrain2();">Tutorial sobre Respond</a></li>
-<li><a href="../docum/tutorial_aaa.pdf" onclick="return SalirTrain2();"  target="_blank" >Tutorial AAA Salideros</a></li>
-<li><a href="../docum/ases_oper24.pdf" onclick="return SalirTrain2();" target="_blank" >Indicaciones Operativas ASES</a></li>
-<li><a href="../docum/RegistroNFA.pdf" onclick="return SalirTrain2();" target="_blank" >Presentación Registro Personas con NFA </a></li>
-</ul>
-</div>
-<div id="submenu4" class="anylinkcss">
-<ul>
-<li><a href="../ama24.asp" onclick="return SalirTrain2();">Rutas de la AMA</a></li>
-<% If instr ("@1@14@16@18@24@28@", "@"&Session("clase")&"@") > 0 Then   %><li><a href="../regds/nuevadsPr.asp" onclick="return SalirTrain2();">Encuesta Poblaci&oacute;n con NFA</a></li><% End If %>
-<% If instr ("@1@5@10@", "@"&Session("iduser")&"@") Then   %><li><a href="../regds/NFA_form1.asp" onclick="return SalirTrain2();">Encuesta Poblaci&oacute;n con NFA (prueba)</a></li><% End If %>
-<% If instr ("@1@5@10@", "@"&Session("iduser")&"@") Then   %><li><a href="http://servicios.jca.gobierno.pr/sites/arqca" onclick="return SalirTrain2();">Aplicaci&oacute;n de la JCA (prueba)</a></li><% End If %>
-<% If instr ("@1@14@16@18@24@28@", "@"&Session("clase")&"@") > 0 Then   %><li><a href="http://64.185.213.40/registroSLL/menu.aspx" onclick="return SalirTrain2();" target="_blank">Aplicación JRTPR</a></li><% End If %>
-<% If instr ("@1@14@16@18@24@28@", "@"&Session("clase")&"@")  or instr ("@1@5@10@", "@"&Session("iduser")&"@") > 0 Then   %><li><a href="../aplic/aaeformLIWAP.asp" onclick="return SalirTrain2();">Programa de Climatización LIWAP</a></li><% End If %>
-<li><a href="../aplic/aaeformLIWAP.asp" onclick="return SalirTrain2();">Programa de Climatización LIWAP</a></li>
-<% If instr ("@1@14@16@18@24@28@", "@"&Session("clase")&"@") > 0 Then   %><li><a href="../regoaj/nuevaoaj.asp" onclick="return SalirTrain2();">Registro OAJ</a></li><% End If %>
-</ul>
-</div>
-<div id="submenu5" class="anylinkcss">
-<ul>
-<% If Session("clase") = 1 Then   %><li><a href="../useradmin/userlist.asp" onclick="return SalirTrain2();">Administracion de Usuarios (en proceso)</a></li><% End If %>
-<% If instr ("@1@16@18@", "@"&Session("clase")&"@") > 0 Then   %><li><a href="../callmoni/calllist.asp" onclick="return SalirTrain2();" >Monitoreo de Llamadas</a></li><% End If %>
-<% If instr ("@1@14@16@18@24@28@", "@"&Session("clase")&"@") > 0 Then   %><li><a href="../encuser/encuserlist.asp" onclick="return SalirTrain2();">Encuestas de Usuarios (en proceso)</a></li><% End If %>
-</ul>
-</div>
-<table width="1024"  border="0" align="center" cellpadding="0" cellspacing="0"> 
-  <tr>
-    <td height="102" colspan="3"><img src="../images/Banner2.jpg" width="1024" height="102" /></td>
-  </tr>
+<table width="1024"  border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="30" colspan="3" background="../images/bg_01222.jpg"  bgcolor="#000066" ><table width="100%" border="0" cellspacing="0">
   <tr>
@@ -3201,7 +3152,7 @@ anylinkcssmenu.init("anchorclass")
     <td width="17%"><div  class="anchorclass Estilo1" rel="submenu2">Directorio de Agencias</div></td>
     <td width="17%"><div  class="anchorclass Estilo1" rel="submenu3">Manuales y Tutoriales</div></td>
     <td width="11%"><div  class="anchorclass Estilo1" rel="submenu4">Herramientas</div>  </td>
-    <td width="18%"><% If instr ("@1@14@16@18@24@28@", "@"&Session("clase")&"@") Then   %> <div  class="anchorclass Estilo1" rel="submenu5">Administraci&oacute;n</div><% End If %>  </td>
+    <td width="18%"><div  class="anchorclass Estilo1" rel="submenu5">Administraci&oacute;n</div></td>
     <td width="11%">&nbsp;</td>
     <td width="8%"><a href="../admin/logoff.asp" class="enlace1">Log Out&nbsp;</a></td>
   </tr>
