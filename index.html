@@ -1,73 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/var12 311.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Documento sin t&iacute;tulo</title>
-<script type="text/javascript" src="public-transport-routing.js"></script>
-
-<style type="text/css">
-<!--
-body {
-	margin-left: 0px; 
-	margin-top: 0px;
-	background-color: #000000;
-}
-.Estilo1 {color: #FFFFFF}
-.Estilo2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-}
-.Estilo3 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #FFFFFF; }
--->
-</style>
+    <meta charset="UTF-8"/>
+    <title>Enrutamiento de Transporte Público</title>
+    <script type="text/javascript" src="public-transport-routing-0.0.1.js"></script>
+    <style type="text/css">
+        html {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-<table width="1024"  border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr height="100%">
-    <td bgcolor="#FFFFFF"> 
-	<table width="100%" border="0" cellspacing="0">
-	  <tr valign="top" height="100%">
-	    <td height="620" colspan="4">
-<!-- InstanceBeginEditable name="EditRegion3" -->
-		<table id = "table" width="100%" border="0" cellspacing="0">
-  <tr>
-    <td height="37">&nbsp;
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr height="100%">
+        <td bgcolor="#FFFFFF">
+            <table width="100%" border="0" cellspacing="0">
+                <tr valign="top" height="100%">
+                    <td height="620" colspan="4">
+                        <table id="table" width="100%" border="0" cellspacing="0">
+                            <tr>
+                                <td class="teoria2" style="display: none">
+                                    <p>Determinaci&oacute;n de Rutas de la AMA</p>
+                                    <label for="rufa"></label>
+                                    <input name="rufa" type="hidden" id="rufa24" size="45"/><br/>
+                                    cami <input name="rufa" id="rufa" value="a" size="85"/><br/>
+                                    ss <input name="rufa" id="rufa22" size="85" value=""/><br/>
+                                    ss1 <input name="rufa" id="rufa2" value="" size="85"/><br/>
+                                    ss2 <input name="rufa" id="rufa222" size="85" value=""/>
+                                </td>
+                            </tr>
 
-        </td>
-    <td class="teoria2"><p>Determinaci&oacute;n de Rutas de la AMA
-      	<label for="rufa"></label>
-      	<input name="rufa" type="hidden" id="rufa24" size="45" />
-		<br />
-		cami  <input name="rufa" id="rufa" value="a" size="85" /><br />
-
-		ss  <input name="rufa"  id="rufa22" size="85" value=""/>
-		<br />
-		ss1 <input name="rufa"  id="rufa2" value="" size="85" />
-		<br />
-		ss2 <input name="rufa"  id="rufa222" size="85" value=""/>
-	</td>
-    <td>&nbsp;</td>
-  </tr>
- 
-<tr>
-    <td width="5%">&nbsp;</td>
-    <td align="left"><table id= "table11" width="75%" border="1" align="center"  bordercolor="#000000" bgcolor="#626262">
-      <tr class="titulo4i">
-        <td height="33" > <table width="97%" border="0" cellspacing="0">
-  <tr>
-    <td><div id="FilaP8">&nbsp;&nbsp;&nbsp;&nbsp;Determinaci&oacute;n de Rutas de la AMA.</div>      
-    <div id="FilaP84"></div></td>
-    </tr>
-</table>  </td>
-      </tr>
-      <tr>
-        <td height="96"><table width="100%" height="100%" border="0" cellspacing="0" bgcolor="#FFFFFF">
-          <tr valign="middle" class="titulo42" >
-            <td width="128">Punto de Partida</td>
-            <td width="357"><label for="ori"></label>
+                            <tr>
+                                <td width="5%">&nbsp;</td>
+                                <td align="left">
+                                    <table id="table11" width="75%" border="1" align="center" bordercolor="#000000"
+                                           bgcolor="#626262">
+                                        <tr class="titulo4i">
+                                            <td height="33">
+                                                <table width="97%" border="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <div id="FilaP8">&nbsp;&nbsp;&nbsp;&nbsp;Determinaci&oacute;n
+                                                                de Rutas de la AMA.
+                                                            </div>
+                                                            <div id="FilaP84"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="96">
+                                                <table width="100%" height="100%" border="0" cellspacing="0"
+                                                       bgcolor="#FFFFFF">
+                                                    <tr valign="middle" class="titulo42">
+                                                        <td width="128">Punto de Partida</td>
+                                                        <td width="357"><label for="ori"></label>
               <select name="ori" id="ori">
                 <option value="0" selected="selected">Seleccione el punto de origen de su viaje ...</option>
                 <option value="1">Viejo San Juan, Estaci&oacute;n Covadonga</option>
@@ -212,11 +200,6 @@ body {
              </select></td>
             <td width="95">&nbsp;</td>
          </tr>
-          <tr class="titulo42" >
-            <td height="12"  valign="top"> </td>
-            <td  valign="top"> </td>
-            <td  valign="top"> </td>
-          </tr>
           <tr valign="middle" class="titulo42" >
             <td>Punto de Destino</td>
             <td><select name="ori2" id="dest">
@@ -363,152 +346,156 @@ body {
             </select></td>
             <td><button type="button" class="botones4" id="boton_1" onclick="ComenzarBusca2();"> &nbsp;Buscar&nbsp; </button></td>
           </tr>
-          <tr class="titulo42" >
-            <td height="12"  valign="top"> </td>
-            <td  valign="top"> </td>
-            <td  valign="top"> </td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="4%">&nbsp;</td>
-  </tr>
+        </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="4%">&nbsp;</td>
+                            </tr>
 
-<tr>
-    <td >&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="5%">&nbsp;</td>
-    <td><table id= "table11" width="92%" border="1" align="center"  bordercolor="#000000" bgcolor="#626262">
-      <tr class="titulo4i">
-        <td height="33" > <table width="97%" border="0" cellspacing="0">
-  <tr>
-    <td><div id="FilaP8">&nbsp;&nbsp;&nbsp;&nbsp;Recorrido Sugerido.</div>      <div id="FilaP84"></div></td>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td width="5%">&nbsp;</td>
+                                <td>
+                                    <table id="table11" width="92%" border="1" align="center" bordercolor="#000000"
+                                           bgcolor="#626262">
+                                        <tr class="titulo4i">
+                                            <td height="33">
+                                                <table width="97%" border="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <div id="FilaP8">&nbsp;&nbsp;&nbsp;&nbsp;Recorrido
+                                                                Sugerido.
+                                                            </div>
+                                                            <div id="FilaP84"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr id="filaR00" style="display:none" onclick="muestrareco('filaR0')">
+                                            <td height="32">
+                                                <table width="100%" height="63%" border="1" cellspacing="0"
+                                                       bgcolor="#FFFFFF">
+                                                    <tr valign="middle" class="titulo44">
+                                                        <td height="26" colspan="4"> &nbsp;Recorrido Directo:</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr id="filaR0" style="display:none">
+                                            <td height="46">
+                                                <div id="tabR0">
+                                                    <table width="100%" height="100%" border="1" cellspacing="0"
+                                                           bgcolor="#FFFFFF">
+                                                        <tr valign="middle" bgcolor="#CCCCCC" class="titulo42">
+                                                            <td width="135" height="25"> Abordar Ruta</td>
+                                                            <td width="366">Desde:</td>
+                                                            <td colspan="2">Hasta:</td>
+                                                        </tr>
+                                                        <tr class="titulo42">
+                                                            <td width="135" height="25">&nbsp;</td>
+                                                            <td width="366">&nbsp;</td>
+                                                            <td colspan="2">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id="filaR11" style="display:none" onclick="muestrareco('filaR1')">
+                                            <td height="32">
+                                                <table width="100%" height="63%" border="1" cellspacing="0"
+                                                       bgcolor="#FFFFFF">
+                                                    <tr valign="middle" class="titulo44">
+                                                        <td height="26" colspan="4"> &nbsp;Recorridos con un
+                                                            Intercambio:
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr id="filaR1" style="display:none">
+                                            <td height="46">
+                                                <div id="tabR1">
+                                                    <table width="100%" height="100%" border="1" cellspacing="0"
+                                                           bgcolor="#FFFFFF">
+                                                        <tr valign="middle" bgcolor="#CCCCCC" class="titulo42">
+                                                            <td width="135" height="25"> Abordar Ruta</td>
+                                                            <td width="366">Desde:</td>
+                                                            <td colspan="2">Hasta:</td>
+                                                        </tr>
+                                                        <tr class="titulo42">
+                                                            <td width="135" height="25">&nbsp;</td>
+                                                            <td width="366">&nbsp;</td>
+                                                            <td colspan="2">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id="filaR2" style="display:none">
+                                            <td height="46">
+                                                <table width="100%" height="100%" border="0" cellspacing="0"
+                                                       bgcolor="#FFFFFF">
+                                                    <tr valign="middle" class="titulo42">
+                                                        <td width="103" height="30"> Abordar Ruta</td>
+                                                        <td width="361">Desde:</td>
+                                                        <td colspan="2">Hasta:</td>
+                                                    </tr>
+                                                    <tr class="titulo42">
+                                                        <div id="tabR2">
+                                                            <td height="12" valign="top"></td>
+                                                            <td colspan="2" valign="top"></td>
+                                                            <td width="205" valign="top"></td>
+                                                        </div>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr id="filaR44" onclick="muestrareco('filaR4')">
+                                            <td height="32">
+                                                <table width="100%" height="63%" border="1" cellspacing="0"
+                                                       bgcolor="#FFFFFF">
+                                                    <tr valign="middle" class="titulo44">
+                                                        <td height="26" colspan="4"> &nbsp;Recorrido optimizado por
+                                                            distancia:
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr id="filaR4" style="display:table-row">
+                                            <td height="46">
+                                                <div id="tabbest">
+                                                    <table width="100%" height="100%" border="1" cellspacing="0"
+                                                           bgcolor="#FFFFFF">
+                                                        <tr valign="middle" bgcolor="#CCCCCC" class="titulo42">
+                                                            <td width="135" height="25"> Abordar Ruta</td>
+                                                            <td width="366">Desde:</td>
+                                                            <td colspan="2">Hasta:</td>
+                                                        </tr>
+                                                        <tr class="titulo42">
+                                                            <td width="135"></td>
+                                                            <td width="366">&nbsp;</td>
+                                                            <td colspan="2">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                     </table>
+                </td>
+                </tr>
+            </table>
+        </td>
     </tr>
-</table>  </td>
-      </tr>
-      <tr id="filaR00" style="display:none" onclick="muestrareco('filaR0')">
-        <td height="32">
-          <table width="100%" height="63%" border="1" cellspacing="0" bgcolor="#FFFFFF">
-            <tr valign="middle" class="titulo44" >
-              <td height="26" colspan="4" > &nbsp;Recorrido Directo:</td>
-              </tr>
-          </table>
-        </td>
-      </tr>
-      <tr id="filaR0" style="display:none">
-        <td height="46"><div id="tabR0">
-          <table width="100%" height="100%" border="1" cellspacing="0" bgcolor="#FFFFFF">
-            <tr valign="middle" bgcolor="#CCCCCC" class="titulo42" >
-              <td width="135" height="25"> Abordar Ruta</td>
-              <td width="366">Desde:</td>
-              <td colspan="2">Hasta:</td>
-            </tr>
-            <tr class="titulo42" >
-              <td width="135" height="25">&nbsp;</td>
-              <td width="366">&nbsp;</td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-          </table>
-        </div></td>
-      </tr>
-      <tr id="filaR11" style="display:none" onclick="muestrareco('filaR1')">
-        <td height="32">
-          <table width="100%" height="63%" border="1" cellspacing="0" bgcolor="#FFFFFF">
-            <tr valign="middle" class="titulo44" >
-              <td height="26" colspan="4" > &nbsp;Recorridos con un Intercambio:</td>
-              </tr>
-          </table>
-        </td>
-      </tr>
-	  <tr id="filaR1" style="display:none">
-        <td height="46"><div id="tabR1">
-          <table  width="100%" height="100%" border="1" cellspacing="0" bgcolor="#FFFFFF">
-            <tr valign="middle" bgcolor="#CCCCCC" class="titulo42" >
-              <td width="135" height="25"> Abordar Ruta</td>
-              <td width="366">Desde:</td>
-              <td colspan="2">Hasta:</td>
-            </tr>
-            <tr class="titulo42" >
-              <td width="135" height="25">&nbsp;</td>
-              <td width="366">&nbsp;</td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-          </table>
-        </div></td>
-      </tr>
-	  <tr id="filaR2" style="display:none">
-        <td height="46">
-          <table width="100%" height="100%" border="0" cellspacing="0" bgcolor="#FFFFFF">
-            <tr valign="middle" class="titulo42" >
-              <td width="103" height="30"> Abordar Ruta</td>
-              <td width="361">Desde:</td>
-              <td colspan="2">Hasta:</td>
-            </tr>
-            <tr class="titulo42"  ><div id="tabR2">
-              <td height="12"  valign="top" > </td>
-              <td colspan="2"  valign="top" > </td>
-              <td width="205"  valign="top" > </td>
-              </div></tr>
-          </table>
-        </td>
-      </tr>
-      <tr id="filaR44" onclick="muestrareco('filaR4')">
-        <td height="32">
-          <table width="100%" height="63%" border="1" cellspacing="0" bgcolor="#FFFFFF">
-            <tr valign="middle" class="titulo44" >
-              <td height="26" colspan="4" > &nbsp;Recorrido optimizado por distancia:</td>
-              </tr>
-          </table>
-        </td>
-      </tr>
-	  
-	  <tr id="filaR4" style="display:table-row">
-        <td height="46"><div id="tabbest">
-          <table  width="100%" height="100%" border="1" cellspacing="0" bgcolor="#FFFFFF">
-            <tr  valign="middle" bgcolor="#CCCCCC" class="titulo42" >
-              <td width="135" height="25"> Abordar Ruta</td>
-              <td width="366" >Desde:</td>
-              <td colspan="2">Hasta:</td>
-            </tr>
-            <tr class="titulo42" >
-              <td width="135" ></td>
-              <td width="366" >&nbsp;</td>
-              <td colspan="2" >&nbsp;</td>
-              </tr>
-          </table>
-        </div></td>
-      </tr>
-    </table></td>
-    <td width="4%">&nbsp;</td>
-  </tr>  
-  <tr>
-    <td >&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="3">
-		<table id= "table11" width="97%" border="1" align="center"  bordercolor="#000000" bgcolor="#626262">
-      <tr class="titulo4i">
-        <td height="33" > <table width="97%" border="0" cellspacing="0">
-          </table>  </td>
-        </tr>
-
-    </table></td>
-    </tr> 
-  <tr>
-    <td colspan="3">&nbsp;</td>
-  </tr>
-
-</table>
-
-<!-- InstanceEndEditable --></td>
-	  </tr>
-	  <tr>
-
-      </tr>
-	</table>
-	</td>
-  </tr>
 </table>
 </body>
-<!-- InstanceEnd --></html>
+</html>
